@@ -145,3 +145,17 @@ document.addEventListener("DOMContentLoaded", () => {
     mainPage.classList.add("visible");
   }, 4001);
 });
+
+function whatsapp(){
+  var name=document.getElementById("name").value;
+  var mobile=document.getElementById("mobile").value;
+  var email=document.getElementById("email").value;
+  var message=document.getElementById("message").value;
+
+  var whatsappurl="https://wa.me/919431988275?text="
+  +"Name of the Client: "+name+"%0a"
+  +"Mobile Number: "+mobile+"%0a"
+  +"Email ID: "+email+"%0a"
+  +"Message: "+message;
+  window.open(whatsappurl,'_blank').focus();
+}
